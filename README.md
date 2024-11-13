@@ -48,8 +48,6 @@ The performance of a goalkeeper can greatly influence match outcomes, particular
 
 By analyzing these statistics, we can identify patterns in goalkeeper performance and its relationship with team success across different seasons.
 
----
-
 ### Analysis and Visualizations
 
 a. **Correlation Between Goalkeeper Metrics and Match Outcomes**
@@ -66,8 +64,6 @@ Tracking goalkeeper performance over several seasons reveals trends such as:
 c. **Comparison Between Teams**
 
 We can compare the best-performing goalkeepers from different teams within the same season, highlighting how individual goalkeeper statistics vary and their impact on team performance.
-
----
 
 ### Using the Following Visualization Ideas
 
