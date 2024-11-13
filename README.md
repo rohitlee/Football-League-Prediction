@@ -70,3 +70,19 @@ We can compare the best-performing goalkeepers from different teams within the s
 a. **Heatmap of Correlation Between Key Variables**
 
 A heatmap can illustrate the correlation between key metrics.
+
+b. **Line Plot of Saves Over Seasons**
+
+A line plot can track how the total number of saves has changed over time for each team, highlighting trends and performance shifts.
+
+c. **Stacked Bar Plot for Key Metrics**
+
+A stacked bar plot can compare goalkeeper metrics such as Saves, CS, and PKsv across seasons, providing a visual representation of how these factors contribute to a team’s success.
+
+### Predicting Match Outcomes with Goalkeeper Stats
+
+Goalkeeper performance metrics can be used to predict match outcomes. By applying machine learning models such as Random Forest or Logistic Regression, we can analyze the relationship between a team’s goalkeeper performance and the likelihood of winning, drawing, or losing.
+
+### Conclusion
+
+This analysis provides a deeper understanding of how goalkeeper performance impacts team success. By examining key metrics such as Saves, Clean Sheets, Penalty Saves, and Crosses Stopped, we can identify the best goalkeeper teams and predict match outcomes. Visualizations such as heatmaps, line plots, and bar charts further clarify these relationships, while machine learning models offer predictive insights for future matches. This exploration underscores the importance of goalkeepers in football, not just in individual performance, but in contributing to overall team success across seasons.
