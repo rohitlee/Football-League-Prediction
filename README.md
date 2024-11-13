@@ -52,18 +52,18 @@ By analyzing these statistics, we can identify patterns in goalkeeper performanc
 
 # Analysis and Visualizations
 
-## a. **Correlation Between Goalkeeper Metrics and Match Outcomes**
+a. **Correlation Between Goalkeeper Metrics and Match Outcomes**
 
 By examining how metrics like Saves, CS, PKsv, and Stp affect match results (Win, Loss, Draw), we can determine which statistics are most influential in a team's success.
 
-## b. **Goalkeeper Performance Over Time**
+b. **Goalkeeper Performance Over Time**
 
 Tracking goalkeeper performance over several seasons reveals trends such as:
 
 - Teams that have improved or declined in goalkeeper statistics over time.
 - The identification of consistently top-performing teams and goalkeepers.
 
-## c. **Comparison Between Teams**
+c. **Comparison Between Teams**
 
 We can compare the best-performing goalkeepers from different teams within the same season, highlighting how individual goalkeeper statistics vary and their impact on team performance.
 
@@ -71,6 +71,6 @@ We can compare the best-performing goalkeepers from different teams within the s
 
 # Using the Following Visualization Ideas
 
-## a. **Heatmap of Correlation Between Key Variables**
+a. **Heatmap of Correlation Between Key Variables**
 
 A heatmap can illustrate the correlation between key metrics.
