@@ -39,3 +39,50 @@ A crucial step before entering the forecasting phase is identifying variables th
 Among the available variables, an analysis was conducted to determine the best goalkeeper team per season which were most strongly related to each other.To assess the relationships between variables, a bar graph was created per season.
 This structured analysis provided valuable insights into goalkeeper performance, allowing for the identification of the best goalkeepers per team across multiple seasons. The findings help in understanding the factors contributing to a goalkeeper's success and the teams that consistently perform well in this area.
 
+Goalkeeper's performance can significantly affect match outcomes, especially through their ability to prevent goals. The key metrics used to evaluate goalkeeper performance include:
+
+- **Saves**: The total number of shots blocked by the goalkeeper.
+- **Clean Sheets (CS)**: Matches where the goalkeeper prevents the opposition from scoring.
+- **Penalty Saves (PKsv)**: Penalty kicks saved by the goalkeeper.
+- **Crosses Stopped (Stp)**: The number of crosses successfully intercepted or cleared.
+
+By analyzing these statistics, we can uncover patterns in goalkeeper performance and its correlation with team success over different seasons.
+
+**Analysis and Visualizations**
+
+## a. **Correlation Between Goalkeeper Metrics and Match Outcomes**
+
+By examining how goalkeeper metrics like Saves, CS, PKsv, and Stp influence match results (Win, Loss, Draw), we can understand which stats contribute most to a team's success.
+
+## b. **Goalkeeper Performance Over Time**
+
+Tracking goalkeeper performance over several seasons reveals trends such as:
+- Teams improving or declining in goalkeeper stats over time.
+- Identification of consistently top-performing teams and goalkeepers.
+
+## c. **Comparison Between Teams**
+
+We can compare the best-performing goalkeepers across different teams in the same season, showcasing how individual goalkeeper stats differ and their impact on the team.
+
+**Using below Visualization Ideas**
+
+## a. **Heatmap of Correlation Between Key Variables**
+
+A heatmap can show the correlation between goalkeeper performance metrics and match outcomes, highlighting which variables are most predictive.
+
+## b. **Line Plot of Saves Over Seasons**
+
+A line plot can track how the total number of saves has changed over time for each team, highlighting trends and performance shifts.
+
+## c. **Stacked Bar Plot for Key Metrics**
+
+A stacked bar plot can compare goalkeeper metrics such as Saves, CS, and PKsv across seasons, providing a visual representation of how these factors contribute to a team’s success.
+
+**Predicting Match Outcomes with Goalkeeper Stats**
+
+Goalkeeper performance metrics can be used to predict match outcomes. By applying machine learning models such as Random Forest or Logistic Regression, we can analyze the relationship between a team’s goalkeeper performance and the likelihood of winning, drawing, or losing.
+
+**Conclusion**
+
+This analysis provides a deeper understanding of how goalkeeper performance impacts team success. By examining key metrics such as Saves, Clean Sheets, Penalty Saves, and Crosses Stopped, we can identify the best goalkeeper teams and predict match outcomes. Visualizations such as heatmaps, line plots, and bar charts further clarify these relationships, while machine learning models offer predictive insights for future matches. This exploration underscores the importance of goalkeepers in football, not just in individual performance, but in contributing to overall team success across seasons.
+
