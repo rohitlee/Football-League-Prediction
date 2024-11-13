@@ -38,4 +38,4 @@ A crucial step before entering the forecasting phase is identifying variables th
 ### Data Exploration - Goalkeeper performance
 Among the available variables, an analysis was conducted to determine the best goalkeeper team per season which were most strongly related to each other.To assess the relationships between variables, a bar graph was created per season.
 This structured analysis provided valuable insights into goalkeeper performance, allowing for the identification of the best goalkeepers per team across multiple seasons. The findings help in understanding the factors contributing to a goalkeeper's success and the teams that consistently perform well in this area.
-<img src="images/bargraph.png" alt="bargraph">
+
