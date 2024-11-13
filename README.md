@@ -34,3 +34,8 @@ The correlation matrix also played a crucial role in identifying variables to be
 
 A crucial step before entering the forecasting phase is identifying variables that can most effectively predict the match outcome, in our case result. To accomplish this, multiple visualizations were created to analyze the relationship between each variable and match outcomes: win, draw, and loss. These visualizations revealed four key variables GF, Gls, GCA, and Ast that are most predictive of a game’s result, as shown below. In addition to identifying these predictive variables, an analysis was conducted to find variables with minimal relevance for predicting the target outcome. This analysis indicated that xGA, PSxG, GA, and GA.1 contribute little value to the model and are therefore less useful for training the model.
 <img src="images/boxplot.png" alt="boxplot">
+
+### Data Exploration - Goalkeeper performance
+Among the available variables, an analysis was conducted to determine the best goalkeeper team per season which were most strongly related to each other.To assess the relationships between variables, a bar graph was created per season.
+This structured analysis provided valuable insights into goalkeeper performance, allowing for the identification of the best goalkeepers per team across multiple seasons. The findings help in understanding the factors contributing to a goalkeeper's success and the teams that consistently perform well in this area.
+<img src="images/bargraph.png" alt="bargraph">
