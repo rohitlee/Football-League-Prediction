@@ -62,8 +62,10 @@ Calculation: For each match, the average of the selected metric is calculated ov
 
 The list of algorithms which were tested in order to verify which one best fits the data.
 
-• Random Forest Classifier (RF) – randomForest package; 
+• Random Forest Classifier (RF) – randomForest package
+
 • Xgboost –xgboost package-(CatBoost Precision, Gradient Boosting Precision, Stacking Precision)
+
 • Neural Networks – MLP Precision.
 
 Addition to identifying the precision of various algorithms, a visual table identifying their precision was obtained. 
