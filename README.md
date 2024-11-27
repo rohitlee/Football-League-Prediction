@@ -46,5 +46,27 @@ The performance of a goalkeeper can greatly influence match outcomes, particular
 - **Crosses Stopped (Stp)**: The number of crosses that the goalkeeper successfully intercepted or cleared.
 
 By analyzing these statistics, we can identify patterns in goalkeeper performance and its relationship with team success across different seasons.
+
 This analysis provides a deeper understanding of how goalkeeper performance impacts team success. By examining key metrics such as Saves, Clean Sheets, Penalty Saves, and Crosses Stopped, we can identify the best goalkeeper teams and predict match outcomes. Visualizations such as heatmaps, line plots, and bar charts further clarify these relationships, while machine learning models offer predictive insights for future matches. This exploration underscores the importance of goalkeepers in football, not just in individual performance, but in contributing to overall team success across seasons.
 
+### Model Development
+During the model development stage data were separated into training and test sets. In this work, it was considered that the test set should include all the games of a season, because throughout the season the team performance varies. To find the best classification model, several algorithms with different characteristics were tested in order to verify which one best fits the data. 
+
+Before testing the different algorithms, the data was normalized to eliminate the effect  of large variations in values. After normalizing the data, the most important variables for predicting the results were identified. This process was done so that the forecast models use only the most relevant variables and guarantee better forecasts. We used Rolling averages to help in analyzing a team's performance or other relevant statistics over a set number of recent games. This method smooths out short-term fluctuations and helps identify trends or patterns in a team's form, which can then be used to make more informed predictions about future matches.
+
+Calculate rolling averages we implemented the following:
+
+Data Selection: You first select the metric you want to analyze ("GF", "GA", "Sh", "SoT", "Dist", "FK", "PK", "PKatt_x").
+Window Size: A "rolling window" or "time frame" is chosen. This is the number of recent matches to consider. We considered the recent 3 games for a given season. The window shifts after each game, so it's "rolling."
+Calculation: For each match, the average of the selected metric is calculated over the set number of previous matches.
+
+The list of algorithms which were tested in order to verify which one best fits the data.
+• Random Forest Classifier (RF) – randomForest package; 
+• Xgboost –xgboost package-(CatBoost Precision, Gradient Boosting Precision, Stacking Precision)
+• Neural Networks – MLP Precision.
+
+Addition to identifying the precision of various algorithms, a visual table identifying their precision was obtained. 
+<img src="images/algo-precision.PNG" alt="algo prediction">
+
+### Conclusion
+Predicting the outcome of sports events remains a highly challenging task. The main difficulty in this study was not the development of a new machine learning algorithm, but rather how to effectively incorporate relevant domain knowledge throughout the entire modeling process. This includes stages such as data collection, integration, model development, and ongoing refinement. The central hypothesis of the challenge is that innovative feature engineering—drawing on domain expertise—plays a crucial role in improving prediction accuracy. Rather than focusing solely on the choice of machine learning algorithm, the key to success lies in how well domain knowledge is leveraged to design meaningful features. In this sense, the process of integrating soccer-specific insights into the model may be far more important than the algorithm itself, as it can greatly enhance the model’s ability to capture the complexities of the game and improve predictive performance.
