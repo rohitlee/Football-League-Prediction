@@ -61,6 +61,7 @@ Window Size: A "rolling window" or "time frame" is chosen. This is the number of
 Calculation: For each match, the average of the selected metric is calculated over the set number of previous matches.
 
 The list of algorithms which were tested in order to verify which one best fits the data.
+
 • Random Forest Classifier (RF) – randomForest package; 
 • Xgboost –xgboost package-(CatBoost Precision, Gradient Boosting Precision, Stacking Precision)
 • Neural Networks – MLP Precision.
