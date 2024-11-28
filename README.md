@@ -49,27 +49,28 @@ By analyzing these statistics, we can identify patterns in goalkeeper performanc
 
 This analysis provides a deeper understanding of how goalkeeper performance impacts team success. By examining key metrics such as Saves, Clean Sheets, Penalty Saves, and Crosses Stopped, we can identify the best goalkeeper teams and predict match outcomes. Visualizations such as heatmaps, line plots, and bar charts further clarify these relationships, while machine learning models offer predictive insights for future matches. This exploration underscores the importance of goalkeepers in football, not just in individual performance, but in contributing to overall team success across seasons.
 
-### Model Development
-During the model development stage data were separated into training and test sets. In this work, it was considered that the test set should include all the games of a season, because throughout the season the team performance varies. To find the best classification model, several algorithms with different characteristics were tested in order to verify which one best fits the data. 
+## Model Development
+During the model development stage, data were divided into training and test sets. To address the risk of overfitting, where a model fits too closely to the training data and performs poorly on new data, four seasons were used for training and one season for testing. The training set included three seasons (2020/2021 to 2022/2023), comprising a total of 1,140 games, while the test set consisted of the 2023/2024 season, with 380 games.
+To identify the optimal classification model, various algorithms with distinct characteristics were tested to determine which one best fits the data.
+- Random Forest
+- Xgboost
+- CatBoost
+- LightGBM
+- Gradient Boosting
+- Stacking-Combines predictions from multiple base linear and nonlinear models (e.g., Random Forest, XGBoost, and LightGBM) into one meta-model to capture complex patterns
+- MLP(Neural Network)
 
-Before testing the different algorithms, the data was normalized to eliminate the effect  of large variations in values. After normalizing the data, the most important variables for predicting the results were identified. This process was done so that the forecast models use only the most relevant variables and guarantee better forecasts. We used Rolling averages to help in analyzing a team's performance or other relevant statistics over a set number of recent games. This method smooths out short-term fluctuations and helps identify trends or patterns in a team's form, which can then be used to make more informed predictions about future matches.
+Our primary goal is to describe each team using features that highlight its strengths and weaknesses relevant to match outcomes. The dimensions of attacking and defensive performance are both clear and intuitive. A team that consistently scores many goals demonstrates a strong attack. Likewise, a team that regularly prevents its opponents from scoring likely has a strong defense. The stronger a team's attack and defense, the higher the likelihood of it prevailing over an opponent.
+We can determine a team's current attacking and defensive strengths by aggregating relevant recent performances over a specific period. Rolling averages are statistical tools that allow us to analyze a team's current attacking and defensive strengths by focusing on its performance metrics over the most recent matches (e.g., the last 3 matches). This approach smoothens short-term fluctuations and highlights recent trends, providing a dynamic assessment of a team's form. Rolling averages help us analyze team strength as follows:
+– Attacking Strength describes a team’s ability to score goals. Metrics like Goals For (GF), Shots (Sh), Shots on Target (SoT), and Expected Goals (xG) are aggregated over the last 3 matches to measure a team’s ability to create and convert chances. If a team has an average of 2.5 goals and 7 shots on target in the last 3 matches, it indicates strong recent attacking performance.
+– Defensive performance describes a team’s ability to prevent goals by the opponent. Metrics like Goals Against (GA), Expected Goals Against (xGA), and Defensive Actions (e.g., tackles, interceptions) over the last 3 matches provide insights into a team's ability to prevent the opponent from scoring. If a team has conceded only 0.5 goals on average in the last 3 matches, it shows solid defensive performance.
+– Recent performance characterizes a team’s current condition in terms of its aggregate performance over recently played matches. Rolling averages capture the current form, which is often a better predictor of near-future performance than season-long averages, especially for dynamic metrics like shots or xG. It accounts for changes like tactical adjustments, player injuries or recoveries and opponent strength in recent matches.
+– Home team advantage refers to the advantage a team has when playing at its home venue. Home team advantage in football can be quantified using the dataset of 1,520 matches, the analysis reveals that 20.94% of matches result in a home team victory, 10.69% end in a draw, and 16.16% are won by the away team.
 
-Calculate rolling averages we implemented the following:
-
-Data Selection: You first select the metric you want to analyze ("GF", "GA", "Sh", "SoT", "Dist", "FK", "PK", "PKatt_x").
-Window Size: A "rolling window" or "time frame" is chosen. This is the number of recent matches to consider. We considered the recent 3 games for a given season. The window shifts after each game, so it's "rolling."
-Calculation: For each match, the average of the selected metric is calculated over the set number of previous matches.
-
-The list of algorithms which were tested in order to verify which one best fits the data.
-
-• Random Forest Classifier (RF) – randomForest package
-
-• Xgboost –xgboost package-(CatBoost Precision, Gradient Boosting Precision, Stacking Precision)
-
-• Neural Networks – MLP Precision.
-
-Addition to identifying the precision of various algorithms, a visual table identifying their precision was obtained. 
+### Prediction of results
+The forecasting results were satisfactory, with MLP(Neural Network) emerging as the best-performing algorithm, achieving a precision of over 65.27%. Stacking and LightGBM followed closely, also showing strong predictive performance. While all algorithms achieved reasonable precision, simpler models like Random forest and XGBoost performed less effectively in handling the complexities of the dataset.
 <img src="images/algo-precision.PNG" alt="algo prediction">
 
-### Conclusion
-Predicting the outcome of sports events remains a highly challenging task. The main difficulty in this study was not the development of a new machine learning algorithm, but rather how to effectively incorporate relevant domain knowledge throughout the entire modeling process. This includes stages such as data collection, integration, model development, and ongoing refinement. The central hypothesis of the challenge is that innovative feature engineering—drawing on domain expertise—plays a crucial role in improving prediction accuracy. Rather than focusing solely on the choice of machine learning algorithm, the key to success lies in how well domain knowledge is leveraged to design meaningful features. In this sense, the process of integrating soccer-specific insights into the model may be far more important than the algorithm itself, as it can greatly enhance the model’s ability to capture the complexities of the game and improve predictive performance.
+## Conclusion
+Predicting sports event outcomes is an inherently complex challenge. The primary difficulty in this study was not the creation of a new machine learning algorithm but rather the effective integration of domain knowledge throughout the modeling process. This encompasses every stage, from data collection and integration to model development and refinement. The central premise is that innovative feature engineering, grounded in domain expertise, is critical for improving prediction accuracy. Success depends not merely on the choice of algorithm but on how effectively soccer-specific insights are incorporated into feature design. By leveraging domain knowledge to create meaningful features, models can better capture the intricacies of the game, ultimately enhancing predictive performance.
+
