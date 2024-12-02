@@ -68,8 +68,8 @@ We can determine a team's current attacking and defensive strengths by aggregati
 - _Home team advantage_ refers to the advantage a team has when playing at its home venue. Home team advantage can be quantified using the dataset of 1,520 matches, the analysis reveals that 20.94% of matches result in a home team victory, 10.69% end in a draw, and 16.16% are won by the away team.
 
 ### Prediction of results
-The forecasting results were satisfactory, with MLP(Neural Network) emerging as the best-performing algorithm, achieving a precision of over 65.27%. Stacking and LightGBM followed closely, also showing strong predictive performance. While all algorithms achieved reasonable precision, simpler models like Random forest and XGBoost performed less effectively in handling the complexities of the dataset.
-<img src="images/algo-precision.PNG" alt="algo prediction">
+The forecasting results were satisfactory, with MLP(Neural Network) emerging as the best-performing algorithm, achieving a precision of over 65.28%. Stacking and LightGBM followed closely, also showing strong predictive performance. While all algorithms achieved reasonable precision, simpler models like Random forest and XGBoost performed less effectively in handling the complexities of the dataset.
+<img src="images/algo-precision-table.PNG" alt="algo prediction">
 
 ## Conclusion
 Predicting sports event outcomes is an inherently complex challenge. The primary difficulty in this study was not the creation of a new machine learning algorithm but rather the effective integration of domain knowledge throughout the modeling process. This encompasses every stage, from data collection and integration to model development and refinement. The central premise is that innovative feature engineering, grounded in domain expertise, is critical for improving prediction accuracy. Success depends not merely on the choice of algorithm but on how effectively soccer-specific insights are incorporated into feature design. By leveraging domain knowledge to create meaningful features, models can better capture the intricacies of the game, ultimately enhancing predictive performance.
