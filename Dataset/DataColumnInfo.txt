@@ -1,0 +1,82 @@
+'Date': Game date
+'Time_x': Game time for team_x 
+'Comp_x': Competition for team_x
+'Round_x': Round of competition for team_x 
+'Day_x': Day of week for team_x 
+'Venue_x': Venue for team_x 
+'Result_x': Result for team_x
+'GF_x': Goals For team_x 
+'GA_x': Goals Against team_x
+'Opponent_x': Opponent of team_x  
+'xG_x': Expected Goals for team_x
+'xGA': Expected Goals Allowed for team_x
+'Poss': Possession 
+'Attendance': Attendance
+'Captain': Captain of home team 
+'Formation': Formation of home team 
+'Opp Formation': Formation of away team 
+'Referee': Referee for game 
+'Time_y': Game time for team_y 
+'Comp_y': Competition for team_y
+'Round_y': Round of competition for team_y 
+'Day_y': Day of week for team_y 
+'Venue_y': Venue for team_y 
+'Result_y': Result for team_y 
+'GF_y': Goals For team_y 
+'GA_y': Goals Against team_y 
+'Opponent_y': Opponent of team_y
+'Gls': Goals scored 
+'Sh': Shots Total 
+'SoT': Shots on Target 
+'SoT%': Shots on Target% 
+'G/Sh': Goals per shot 
+'G/SoT': Goals per shot on target 
+'Dist': Average shot distance 
+'FK': Shots from Free kicks 
+'PK': Penalty Kicks made 
+'PKatt_x': Penalty kicks attempted 
+'xG_y': Expected goals 
+'npxG': Non-Penalty Expected Goals 
+'npxG/Sh': Non-Penalty Expected Goals per shot  
+'G-xG': Goals minus Expected Goals 
+'np:G-xG': Non-Penalty Goals minus Non-Penalty Expected Goals 
+'Time': Match Time  
+'Day': Match Day
+'Result': Match Results 
+'GF': Match Goals For 
+'GA': Match Goals Againsts 
+'Opponent': Match Opponent 
+'Season': Season 
+'Team': Team
+
+Goalkeeping
+'SoTA': Shots on Target Against 
+'GA': Goals Against 
+'Saves': Saves made 
+'Save%': Saves made% 
+'CS': Clean Sheets
+'PSxG': Post-Shot Expected Goals 
+'PSxG+/-': Post-Shot Expected Goals minus Goals Allowed 
+'PKatt_y': Penalty Kicks Attempted 
+'PKA': Penalty Kicks Allowed 
+'PKsv': Penalty Kicks Saved 
+'PKm': Penalty Kicks Missed 
+'Cmp': Passes Completed 
+'Att': Passes Attempted
+'Cmp%': Passes Completion Percentage 
+'Att (GK)': Passes Attempted (GK) 
+'Thr': Throws Attempted 
+'Launch%': Percentage of passes that were Launched 
+'AvgLen': Average Pass Length 
+'Att': Goal Kicks Attempted 
+'Launch%': launch% (Goal Kicks)
+'AvgLen': Avg. Length of Goal Kicks 
+'Opp': Crosses Face 
+'Stp': Crosses Stopped 
+'Stp%': Crosses Stopped% 
+'#OPA': Def. Actions outside Pen. Area  
+'AvgDist': Average Distance of Def. Actions 
+
+
+Remove Colms
+'xG_y', 'GF_x', 'GF_y', 'GA_x', 'GA_y', 'Opponent_x', 'Opponent_y', 
