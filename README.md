@@ -69,6 +69,7 @@ We can determine a team's current attacking and defensive strengths by aggregati
 
 ### Prediction of results
 The forecasting results were satisfactory, with MLP(Neural Network) emerging as the best-performing algorithm, achieving a precision of over 65.28%. Stacking and LightGBM followed closely, also showing strong predictive performance. While all algorithms achieved reasonable precision, simpler models like Random forest and XGBoost performed less effectively in handling the complexities of the dataset.
+
 <img src="images/algo-precision-table.PNG" alt="algo prediction">
 
 ## Conclusion
